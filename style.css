@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700;800;900&display=swap');
+/*400 700 800 900*/
+
+body {
+    font-family: "Catamaran";
+    font-weight: 700;
+    color: #454140;
+}
+
+/* Шапка */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: clamp(80px ,60vh , 100px);
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    left: 4%;
+    width: 22%;
+    z-index: 2;
+}
+.header-left * {
+    margin: 0 5%;
+    color: #454140;
+    text-decoration: none;
+}
+.header-left img {
+    width: clamp(50px ,30% , 80px);
+    margin-left: 0;
+}
+
+.header-find {
+    border-bottom: 3px solid #dadada;
+    width: clamp(1px , 37%, 650px);
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;color: #454140;
+    position: absolute;
+    z-index: 2;
+}
+.header-find textarea {
+    border: 0;
+    resize: none;
+    font-size: 16px;
+    width: 100%;
+    background-color: #e4f3ee;
+}
+.header-find textarea:focus {
+    outline: none;
+    border: none !important;
+    -moz-appearance:none;
+}
+.header-find img {
+    width: clamp(10px, 20%, 30px);
+    right: 0;
+    background-color: #e4f3ee;
+}
+
+.header-circle {
+    width: clamp(10px, 41vw, 850px);
+    height: clamp(10px, 41vw, 850px);
+    position: absolute;
+    top: clamp(-400px, -30%, -150px);
+    background-color: #e4f3ee;
+    border-radius: 1500px;
+    z-index: -2;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    position: absolute;
+    right: 4%;
+    z-index: 2;
+}
+.header-right p {
+    width: 4ch;
+    height: 3ch;
+    border-radius: 30px;
+    background-color: #ed4748;
+    text-align: center;
+    padding: 0.6ch 0 0.5ch 0;
+    margin-right: 8px;
+}
+.header-right a{
+    text-decoration: none;
+    color: #454140;
+}
+
+/* Информация */
+.info {
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 5%;
+    z-index: 2;
+}
+
+.info-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.info-left img {
+    width: 175px;
+}
+.info-left a {
+    text-decoration: none;
+    color: #cccccb;
+    background-image: linear-gradient(#cccccb, #cccccb);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size .5s;
+}
+.info-left a:hover {
+    background-size: 0% 2px;
+}
+
+.info-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.info-right p:nth-child(1),.info-right p:nth-child(2) {
+    font-size: 64px;
+    font-weight: 900;
+    color: #00805b;
+    margin: 0 0;
+    line-height: 95%;
+}
+.info-right p:nth-child(3) {
+    color: #cccccb;
+}
+.info-right a {
+    text-decoration: none;
+    color: #cccccb;
+    background-image: linear-gradient(#00805b, #00805b);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+    transition: background-size .5s;
+}
+.info-right a:hover {
+    background-size: 0% 2px;
+}
+
+.menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.product {
+    position: relative;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    background-color: #e5e6df;
+    border-radius: 15px;
+    height: 400px;
+    width: 300px;
+}
+.product img {
+    height: 250px;
+    z-index: -1;
+    width: 340px;
+    margin-top: -300px;
+    align-self: center;
+
+}
+.product-name {
+    margin: 0 13%;
+    font-size: 24px;
+    color: #a29d90;
+    font-weight: 800;
+}
+.product ul {
+    list-style: none;
+    font-family: "Catamaran";
+    font-weight: 400;
+    color: #a29d90;
+}
+.product-ul {
+    margin-top: 5%;
+    margin-bottom: 25%;
+}
+
+.product ul ul {
+    padding-left: 20px;
+}
+
+.with-procent {
+    width: 100%;
+    margin-right: 0;
+}
+.with-procent:nth-child(2) span {
+    position: absolute;
+    margin: 0 40%;
+    font-family: "Catamaran";
+    font-weight: 400;
+}
+.with-procent:nth-child(1) span {
+    position: absolute;
+    margin: 0 24%;
+    font-family: "Catamaran";
+    font-weight: 400;
+}
+
